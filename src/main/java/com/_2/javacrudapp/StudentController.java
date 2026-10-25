@@ -26,7 +26,7 @@ public class StudentController {
                              @RequestParam String email,
                              RedirectAttributes redirectAttributes) {
         repository.save(new Student(name, email));
-        redirectAttributes.addFlashAttribute("message", "Student added successfully!");
+        redirectAttributes.addFlashAttribute("message", "Student added successfully!!");
         return "redirect:/";
     }
 
